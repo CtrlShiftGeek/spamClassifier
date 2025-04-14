@@ -60,3 +60,6 @@ Check it out live 👉 [https://spamclassifier-7hq4.onrender.com](https://spamcl
                             │ Display: "Spam" or "Not Spam"  │
                             └────────────────────────────────┘
 
+---
+Thank You
+
