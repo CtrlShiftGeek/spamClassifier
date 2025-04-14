@@ -37,13 +37,14 @@ Check it out live 👉 [https://spamclassifier-7hq4.onrender.com](https://spamcl
                                  │
                                  ▼
                     ┌────────────────────────────┐
-                    │      Flask Web Server       │
-                    │   Routes: / and /predict    │
+                    │      Flask Web Server      │
+                    │   Routes: / and /predict   │
                     └────────────┬───────────────┘
                                  │
-               ┌────────────────┴──────────────┐
-               │                               │
-               ▼                               ▼
+               ┌─────────────────┴──────────────┐
+               │                                │
+               ▼                                ▼
+               
    ┌──────────────────────┐        ┌────────────────────────┐
    │ Text Preprocessing   │        │  Load ML Model + TF-IDF│
    │ - Lowercase          │        │  - model.pkl           │
