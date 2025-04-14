@@ -1,57 +1,62 @@
 # 📧 Spam Classifier Web App
 
-A machine learning-based web application that classifies SMS messages as **Spam** or **Not Spam** using Natural Language Processing (NLP) and a trained ML model.
-
-### 🚀 Deployed App
-Check it out live 👉 [https://spamclassifier-7hq4.onrender.com](https://spamclassifier-7hq4.onrender.com)
+A machine learning-based web application that classifies SMS messages as **Spam** or **Not Spam** using Natural Language Processing (NLP) techniques and a trained ML model.
 
 ---
 
-## 📌 Features
+## 🚀 Live Demo
 
-- Clean and modern UI built with Bootstrap
-- NLP-based text preprocessing (tokenization, stopword removal, stemming)
-- TF-IDF vectorization
-- Trained classification model (e.g., Naive Bayes)
-- Flask-based web backend
-- Hosted on Render
+🔗 **Deployed on Render**:  
+👉 [https://spamclassifier-7hq4.onrender.com](https://spamclassifier-7hq4.onrender.com)
 
 ---
 
-## 🧠 Tech Stack
+## 🧰 Tech Stack
 
-- Python
-- Flask
-- Scikit-learn
-- NLTK
-- HTML/CSS + Bootstrap
-- Render (for deployment)
+- **Frontend**: HTML, CSS, Bootstrap
+- **Backend**: Python, Flask
+- **Machine Learning**: Scikit-learn, NLTK
+- **Deployment**: Render
 
 ---
 
-                    ┌────────────────────────────┐
-                    │      Web Browser (User)    │
-                    │  - Enters SMS message      │
-                    │  - Clicks Predict button   │
-                    └────────────┬───────────────┘
-                                 │
-                                 ▼
-                    ┌────────────────────────────┐
-                    │      Flask Web Server      │
-                    │   Routes: / and /predict   │
-                    └────────────┬───────────────┘
-                                 │
-               ┌─────────────────┴──────────────┐
-               │                                │
-               ▼                                ▼
-               
-   ┌──────────────────────┐        ┌────────────────────────┐
-   │ Text Preprocessing   │        │  Load ML Model + TF-IDF│
-   │ - Lowercase          │        │  - model.pkl           │
-   │ - Tokenization       │        │  - vectorizer.pkl      │
-   │ - Stopword Removal   │        └────────────┬───────────┘
-   │ - Stemming           │                     │
-   └──────────────────────┘                     ▼
+## 🎯 Features
+
+- 🔍 Real-time prediction of SMS messages as Spam or Not Spam
+- 🧠 Uses trained ML model with TF-IDF vectorization
+- ✨ Clean UI built with Bootstrap
+- ☁️ Hosted and accessible via Render
+
+---
+
+## 📐 High-Level Design (HLD)
+
+```plaintext
+Frontend (HTML/CSS + Bootstrap)
+Deployed via Render
+
+                ┌────────────────────────────┐
+                │      Web Browser (User)    │
+                │  - Enters SMS message      │
+                │  - Clicks Predict button   │
+                └────────────┬───────────────┘
+                             │
+                             ▼
+                ┌────────────────────────────┐
+                │      Flask Web Server      │
+                │   Routes: / and /predict   │
+                └────────────┬───────────────┘
+                             │
+           ┌─────────────────┴──────────────┐
+           │                                │
+           ▼                                ▼
+ ┌──────────────────────┐        ┌────────────────────────┐
+ │   Text Preprocessing │        │  Load ML Model + TF-IDF│
+ │  - Lowercase         │        │  - model.pkl           │
+ │  - Tokenization      │        │  - vectorizer.pkl      │
+ │  - Stopword Removal  │        └────────────┬───────────┘
+ │  - Stemming          │                     │
+ └──────────────────────┘                     ▼
                                 ┌────────────────────────┐
                                 │  Prediction (Spam/Ham) │
                                 └────────────┬───────────┘
@@ -60,7 +65,3 @@ Check it out live 👉 [https://spamclassifier-7hq4.onrender.com](https://spamcl
                             │ Rendered back on index.html    │
                             │ Display: "Spam" or "Not Spam"  │
                             └────────────────────────────────┘
-
----
-Thank You
-
